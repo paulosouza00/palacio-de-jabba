@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family:"Rusted";
+    src: url('rusted.ttf');
+}
+
+* {
+    margin-top:px ;
+    padding: px;
+    margin: px;
+}
+:root{
+    --cor1: #D48824;
+    --cor2: #AA7939;
+    --cor3: #FF9000;
+    --cor4: #806440;
+    --cor5: #554939;
+
+    --fonte-padrao: Arial Helvetica sans-serif; 
+}
+body {
+    background-color: var(--cor5);
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor3),var(--cor2));
+    color: white;
+    min-height: 150px;
+    text-align: center;
+    margin: 0px -8px -1px -8px;
+    padding-bottom: px;
+
+}
+
+.fonte-externa {
+    font-family:"Rusted";
+    font-weight: normal;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+nav {
+    background-color: var(--cor2);
+    padding: 5px;
+    margin: 0px -8px 0px -8px;
+    margin-bottom: 0px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.219);
+}
+nav > a {
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-decoration: none;
+    font-weight:bold ;
+    font-size: 1.5em;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+nav > a:hover {
+    background-color: var(--cor5);
+    text-decoration: underline;
+    border-radius: 3px;
+    padding: 5px;
+    transition: 0.5s;
+}
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.5em;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+main {
+    font-family: var(--fonte-padrao);
+    background-color: white;
+    margin: auto;
+    margin-top: 1px;
+    padding: 10px;
+    max-width: 900px;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: inset 0px 7px 7px rgba(0, 0, 0, 0.219);
+}
+
+article > h1 {
+    background-image: linear-gradient(to left,transparent, var(--cor2), var(--cor3));
+    font-family: "Bebas Neue";
+    font-size: 2em;
+    padding-left: 10px;
+}
+
+article > h2 {
+    background-image: linear-gradient(to left,transparent, var(--cor2), var(--cor3));
+    font-family: "Bebas Neue";
+    font-size: 1.8em;
+    padding-left: 10px;
+}
+article p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    font-size: 1.1em;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+
+main img {
+    margin: auto;
+    display: block;
+}
+
+article a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+article a::after {
+    content: '\1F517';
+}
+
+article a:hover {
+    text-decoration: underline;
+    background-color: var(--cor5);
+    color: white;
+    transition: 0.5s;
+}
+footer {
+    background-color: var(--cor2);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+}
